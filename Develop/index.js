@@ -18,7 +18,15 @@ const questions = [{
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {inquirer.prompt(questions)}
+function init() {inquirer.prompt(questions).then((data) => {
+    console.log(data);
+    fs.writeFile('test.md', `
+    #${data.title} \n\n
+    ##Description \n
+    ${data.description}
+    `,
+    (err) => err ? console.error(err) : console.log('success!'))
+})}
 
 // Function call to initialize app
 init();
