@@ -80,8 +80,37 @@ function init() {
       "README.md",
       `
 # ${data.title}
+!(${licenseLink})
+
+-[Description](#description)
+-[Installation](#installation)
+-[Usage](#usage)
+-[Contributors](#contributors)
+-[Tests](#tests)
+-[License](#license)
+-[Questions](#questions)
+
+
 ## Description
 ${data.description}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Contributors
+${data.contribution}
+
+## Tests
+${data.tests}
+
+## License
+This software is provided under the following license: ${data.license}.
+
+## Questions
+For more information on this project, please message ${data.github} or email ${data.email}.
 `,
       (err) => (err ? console.error(err) : console.log("success!"))
     );
