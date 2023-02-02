@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// variables to call the required packages for this application.
 const inquirer = require("inquirer");
 const fs = require("fs");
 let licenseLink;
-// TODO: Create an array of questions for user input
+// array that contains all the questions for the user.
 const questions = [
   {
     type: "input",
@@ -52,8 +52,9 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to initialize app
+// Init function that contains all the logic.
 function init() {
+  //Inquirer call to handle the questions in the command line interface
   inquirer.prompt(questions).then((data) => {
     console.log(data);
     switch(data.license) {
@@ -76,11 +77,13 @@ function init() {
         licenseLink = '';
         break;
     }
+
+    //Method to write markdown file to the file system.
     fs.writeFile(
       "README.md",
       `
 # ${data.title}
-!(${licenseLink})
+![License Information](${licenseLink})
 
 -[Description](#description)
 -[Installation](#installation)
