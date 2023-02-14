@@ -1,18 +1,33 @@
-# Readme-generator
-This program allows a user to automatically generate a README file in 
 
-## To play
-To play the quiz, click the start button (labeled Go!) and answer the questions.
-A timer will begin counting down.  If you answer correctly, the page will go on to the next question.
-If you don't answer correctly, 10 seconds will be subtracted from the timer, then it will go to the next question.
+# Automatic README Generator
+![License Information](./assets/mit.svg)
 
-## High score
-When you reach the end, your score will be recorded as the time remaining in the timer.  Enter your initials and click submit, and 
-your score will be recorded and displayed in a table!  If you want to play again, you may do so, and subsequent stores will also be saved.
+-[Description](#description)
+-[Installation](#installation)
+-[Usage](#usage)
+-[Contributors](#contributors)
+-[Tests](#tests)
+-[License](#license)
+-[Questions](#questions)
 
-##Demo
-Here is the starting page of the quiz:
-![The starting page of the quiz.](./assets/images/ss1.png)
 
-Here is where to register the high score:
-![High score page](./assets/images/ss2.png)
+## Description
+This is a simple, easy-to-use application to let computer programmers write READMEs for their programs quickly and effortlessly.
+
+## Installation
+First download this code repository to your computer.  Access the root directory in a command line interface, and type 'npm i'.  Then when it is finished installing the packages, type in 'node index.js' to use the program.
+
+## Usage
+Use of the program is very simple.  Just answer the questions it asks you (you may want to prepare some parts in advance, such as the description and installation instructions).  After you have answered all the questions, it will automatically save a README file in your directory.  In fact, this README file itself was generated using this program!
+
+## Contributors
+To contribute to this project, please contact the lead developer via Github.
+
+## Tests
+N/A
+
+## License
+This software is provided under the following license: MIT.
+
+## Questions
+For more information on this project, please message undefined or email N/A.
