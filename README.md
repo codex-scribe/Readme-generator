@@ -26,6 +26,9 @@ To contribute to this project, please contact the lead developer via Github.
 ## Tests
 N/A
 
+## Demo Video
+![Demonstration video](https://drive.google.com/file/d/1Uy6XDbc2jACa7tVhZuFA7KDBan2HwUNM/view)
+
 ## License
 This software is provided under the following license: MIT.
 
